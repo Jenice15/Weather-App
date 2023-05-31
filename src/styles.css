@@ -1,0 +1,99 @@
+.my-weather-app {
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 20px;
+    background-color: blue;
+    border: 2px solid orange;
+    max-width: 800px;
+    max-height: 550px;
+}
+.hz-line {
+    display: block;
+    width: 50%;
+    border-top: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.sun-logo {
+    height: 110px;
+    width: 120px;
+    display: inline block;
+}
+.current-conditions {
+    list-style-type: none;
+}
+
+.current-weather {
+    list-style-type: none;
+}
+
+#city-input {
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    outline: none;
+    background-color: orange;
+    height: 30px;
+    width: 200px;
+}
+::placeholder {
+    color: whitesmoke;
+}
+
+.current-location {
+    color: whitesmoke;
+    font-size: 30px;
+    position: relative;
+    /* left: -220px; */
+}
+
+.current-date-time {
+    position: relative;
+    left: -200px;
+    top: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.current-weather {
+    position: relative;
+    left: -230px;
+    top: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+.sun-logo {
+    position: relative;
+    top: -250px;
+    height: 100px;
+    width: 100px;
+    right: -200px;
+}
+
+.current-conditions {
+    position: relative;
+    right: -180px;
+    top: -280px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+.highlight {
+    border: 4px solid orange;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    float: center;
+    position: relative;
+    right: -500px;
+    /* background-color: rgb(237, 184, 85); */
+    opacity: 0.8;
+}
+
+.coder-name {
+    display: block;
+}
