@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Weather App</title>
         <link rel="stylesheet" href="src/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -13,7 +14,7 @@
                 <h1>Weather</h1>
                 <form>
                     <input
-                        type="search"
+                        type=" search"
                         placeholder="Search"
                         autofocus="on"
                         autocomplete="off"
@@ -23,42 +24,41 @@
                 <hr class="hz-line"/>
 		        </br>
         
-                <p class="current-location">Santa Clara, CA</p>
+                <p class="current-location" id="city">Santa Clara</p>
                 <!-- <div class="highlight">  -->
                 <h4 class="current-date-time">
                     May 26 1:15 PM
                 </h3>
-                <ul class="current-weather">
-                    <li class="current-temperature">
-				        20&deg; C / F
-			        </li>
+                <div class="current-weather">
+                    <h4 class="current-temperature" id="temperature">
+                    </h3>  
+                    <div class="units"><b>&deg;C / &deg;F</b></div>
                     <br/>
-                    <li>
-                        RealFeel 19&deg;
-			        </li>
-			
-		        </ul>
+                    <span class="real-feel">RealFeel:</span>
+                    <p class="feels-like" id="feels-like"></p>
+			     </div>
                 <div class="row-6">
-                    <div>
+                    <div id="sun-logo">
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/836/original/IMG-8381.PNG?1685460819" alt="sun image"  class="sun-logo"/>
                     </div>
                 <ul class="current-conditions">
-                    <li>
-                        Humidity: 
+                    <li> Humidity: <span id="humidity">
+                        
                     </li>
                     <br/>
                     <li>
-                        Precipitation:
+                        Pressure:<span id="pressure"></span>
                     </li>
                     <br/>
-                    <li>
-                        Wind:
+                    <li > wind: <span id="wind"></span>km/H
                     </li>
                 </ul>
                 </div>
             <script src="src/index.js"></script>
             </div>
         </div>
-        <smal class="coder-name">coded by <a href="#">Jenice Martin</a></small>
+        <center>
+            <small><a href="https://app.netlify.com/sites/profound-malabi-44ac58/overview" target="_blank">Open source code</a> by Jenice Martin</small>
+        </center>
     </body>
 </html>
