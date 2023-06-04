@@ -10,7 +10,7 @@
 }
 .hz-line {
     display: block;
-    width: 50%;
+    width: 70%;
     border-top: 1px solid #ccc;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +41,17 @@ h1 {
 }
 ::placeholder {
     color: whitesmoke;
+}
+
+.button {
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    outline: none;
+    background-color: orange;
+    height: 38px;
+    width: 80px;
+    color: whitesmoke;
+    font-size: 18px;
 }
 
 .current-location {
