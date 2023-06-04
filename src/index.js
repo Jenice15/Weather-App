@@ -59,7 +59,7 @@ function formatDate(timestamp) {
     ];
     let month = months[date.getMonth()];
 
-    return `${day} ${month} ${dt} ${hours} : ${minutes} ${ext}`;
+    return `${day} ${month} ${dt}  ${hours}:${minutes} ${ext}`;
 }
 
 //function formatDay(timestamp) {
@@ -79,6 +79,9 @@ function displayTemp(response) {
     let pressure = document.querySelector("#pressure");
     let wind = document.querySelector("#wind");
     let date = document.querySelector("#date-time");
+    let description = document.querySelector("#description");
+    let icon = document.querySelector("#icon");
+
     // let cityInput = document.querySelector("#city-input");
     currentTemperature.innerHTML = Math.round(
         response.data.temperature.current
@@ -90,11 +93,15 @@ function displayTemp(response) {
     pressure.innerHTML = response.data.temperature.pressure;
     wind.innerHTML = Math.round(response.data.wind.speed);
     date.innerHTML = formatDate(response.data.time * 1000);
-    console.log(response.data.time);
+    description.innerHTML = `(${response.data.condition.description})`;
+
+    icon.setAttribute =
+        ("src",
+        `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}.png`);
 }
 
 let apiKey = "fa90t5bf5523344e459f280fabbb9o83";
-let city = "london";
+let city = "leicester";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 console.log(apiUrl);
 
