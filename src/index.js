@@ -59,7 +59,7 @@ function formatDate(timestamp) {
     ];
     let month = months[date.getMonth()];
 
-    return `${day} ${month} ${dt}  ${hours}:${minutes} ${ext}`;
+    return `Last updated : ${day} ${dt}  ${hours}:${minutes} ${ext}`;
 }
 
 //function formatDay(timestamp) {
@@ -93,15 +93,16 @@ function displayTemp(response) {
     pressure.innerHTML = response.data.temperature.pressure;
     wind.innerHTML = Math.round(response.data.wind.speed);
     date.innerHTML = formatDate(response.data.time * 1000);
-    description.innerHTML = `(${response.data.condition.description})`;
+    description.innerHTML = `${response.data.condition.description}`;
 
-    icon.setAttribute =
-        ("src",
-        `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon_url}.png`);
+    icon.setAttribute(
+        "src",
+        `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+    );
 }
 
 let apiKey = "fa90t5bf5523344e459f280fabbb9o83";
-let city = "santa clara";
+let city = "london";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 console.log(apiUrl);
 

@@ -12,21 +12,22 @@
         <div class="container">
             <div class="my-weather-app">
                 <h1>Weather</h1>
-                <form>
+                <form id="search-form">
                     <input
                         type=" search"
                         placeholder="Search"
                         autofocus="on"
                         autocomplete="off"
+                        type="submit"
                         id="city-input"
-                    />
+                        />
                 </form>
                 <hr class="hz-line"/>
 		        </br>
         
-                <p class="current-location" id="city">Santa Clara</p><span class="description" id="description">(Clear)</span>                <!-- <div class="highlight">  -->
+                <p class="current-location" id="city">Santa Clara</p><span class="description" id="date-time" ></span>                <!-- <div class="highlight">  -->
                 <div class="body">
-                    <h4 class="current-date-time" id="date-time">May 2023
+                    <h4 class="current-date-time"id="description">
                     </h4>
                     <div class="current-weather">
                         <h4 class="current-temperature" id="temperature">
@@ -37,8 +38,8 @@
                         <p class="feels-like" id="feels-like"></p>
 			        </div>
                     <div class="row-6">
-                    <div id="icon">
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/836/original/IMG-8381.PNG?1685460819" alt="sun image"  class="sun-logo" />
+                    <div>
+                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/836/original/IMG-8381.PNG?1685460819" alt="sun image"  class="sun-logo"  id="icon" />
                     </div>
                     <ul class="current-conditions">
                         <li> Humidity: <span id="humidity">
