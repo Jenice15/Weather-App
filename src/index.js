@@ -101,7 +101,7 @@ function displayTemp(response) {
 }
 
 let apiKey = "fa90t5bf5523344e459f280fabbb9o83";
-let city = "leicester";
+let city = "santa clara";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 console.log(apiUrl);
 
