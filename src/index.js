@@ -59,7 +59,7 @@ function formatDate(timestamp) {
     ];
     let month = months[date.getMonth()];
 
-    return `Last updated : ${day} ${dt}${hours}:${minutes} ${ext}`;
+    return `Last updated : ${day} ${dt} ${hours}:${minutes} ${ext}`;
 }
 
 //function formatDay(timestamp) {
