@@ -39,7 +39,6 @@ function formatDate(timestamp) {
             ext = "PM";
         }
     }
-
     let days = ["Sun", "Mon", "Tue", "wed", "Thu", "Fri", "Sat"];
     let day = days[date.getDay()];
 
